@@ -1,0 +1,45 @@
+form.headerForm {
+  background-color: var(--white) !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  padding-left: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+form.headerForm svg {
+  font-size: 1.3em;
+}
+
+form.footerForm {
+  background-color: var(--white) !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  padding-left: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+form.footerForm svg {
+  font-size: 1.3em;
+}

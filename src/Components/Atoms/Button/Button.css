@@ -1,0 +1,38 @@
+.primary-btn, .atomButton.primary-btn {
+  background-color: var(--background-button);
+  color: var(--white);
+}
+.primary-btn:hover {
+  background-color: var(--background-button-hover) !important;
+}
+
+.outlined-primary-btn, .atomButton.outlined-primary-btn {
+  background-color: var(--white);
+  color: var(--background-button);
+}
+.outlined-primary-btn:hover {
+  color: var(--background-button-hover) !important;
+}
+
+.atomButton {
+  font-size: 0.8rem !important;
+  padding: 0.8rem 1.5rem !important;
+  text-align: center !important;
+  border-radius: 0.5rem !important;
+  cursor: pointer !important;
+  border: 1px solid var(--background-button) !important;
+}
+.atomButton > svg {
+  color: inherit !important;
+  background-color: inherit !important;
+}
+.atomButton:hover {
+  border-color: var(--background-button-hover) !important;
+}
+
+@media screen and (max-width: 399.9px) {
+  .atomButton {
+    font-size: calc(0.75rem + 0.5vw) !important;
+    padding: 0.6rem 1.35rem !important;
+  }
+}

@@ -1,0 +1,32 @@
+$auto: auto;
+$unset: unset;
+$none: none;
+
+@mixin PseudoMixin($t: $auto, $r: $auto, $b: $auto, $l: $auto, $width: $unset, $height: $unset){
+    position: absolute;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+    width: $width;
+    height: $height;
+}
+
+
+@mixin FlexMixin($justify: $unset, $align: $unset, $dir: row, $wrap: $unset, $gap: $unset){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin BackgroundMixin($url: $none, $pos: $unset, $size: $unset, $rpt: $unset){
+    background: {
+        image: $url;
+        position: $pos;
+        size: $size;
+        repeat: $rpt;
+    };
+}

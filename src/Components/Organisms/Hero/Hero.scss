@@ -1,0 +1,169 @@
+@import '../../../Style/Mixins';
+
+.MuiGrid-root.MuiGrid-container.Hero{
+    background-color: var(--background1) !important;
+    .heroContent{
+        .sectionHead{
+            padding-right: 7rem;
+        }
+        p.textTypography{
+            font-size: 1.2rem !important;
+        }
+        form.headerForm{                    
+            width: 85%;
+            &>.MuiBox-root{
+                width: 80%;
+                &>.headerInput{
+                    width: calc(100% - 21px);
+                    &::before, &::after{
+                        display: none !important;
+                    }                    
+                }
+            }
+        }
+    }
+    .heroFacts{
+        position: relative;
+
+        .heroFacts-item{
+            z-index: 2;
+            &:first-of-type{
+                @include PseudoMixin(2rem, null, null, 4%, null, null);
+            }
+            &:last-of-type{
+                @include PseudoMixin(6rem, 23%, null, null, null, null);
+            }
+            &>.categoriesFact{
+                padding: 1.6rem 1rem 0.6rem !important;
+                position: relative;
+                max-width: 100% !important;
+
+                img{
+                    @include PseudoMixin(-2rem, calc(50% - 1.75rem), null, null, null, null);
+                }
+            }
+        }
+
+        &>img{
+            margin: auto auto 0rem;
+            max-height: 50vh;
+            display: block;
+            @include PseudoMixin(-1%, null, null, 5%, 90%, null);
+        }
+    }
+
+    @media screen and (max-width: 399.9px){
+        &>.MuiGrid-item.heroSmForm form.headerForm {
+            width: 85% !important;
+            input.MuiInputBase-input.MuiInput-input{
+                font-size: calc(0.75rem + 0.5vw) !important;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .heroContent .sectionHead{ padding-right: 0rem !important; }
+    }
+    @media screen and (max-width: 600px) {
+        padding-top: 4rem !important;
+    }
+    @media screen and (min-width: 900.01px) {
+        &>.MuiGrid-item{
+            &.heroContent{
+                form.headerForm{ 
+                    display: flex; 
+                }
+            }
+            &.heroSmForm{ display: none; }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        &>.MuiGrid-item{
+            display: flex;
+            flex-direction: column;
+            &.heroFacts{ height: 50vh; }
+            &.heroContent{
+                form.headerForm{ display: none !important; }
+            }
+            &.heroSmForm{ display: flex !important; 
+                form.headerForm{                    
+                    width: 90%;
+                    justify-content: space-between;
+                    &>.MuiBox-root{
+                        width: 80%;
+                        &>.headerInput{
+                            width: calc(100% - 21px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // .heroFacts img, .heroFacts-item
+    @media screen and (min-width: 880px) and ( max-width: 1000px ) {
+        padding: 10rem 0% 2rem 8.4% !important;
+        .heroFacts .heroFacts-item{
+            &:first-of-type {
+                top: 2.5rem !important;
+                left: -3% !important;
+            }
+            &:last-of-type {
+                top: 7rem !important;
+                right: 12% !important;
+            }
+        }
+    }
+    @media screen and (min-width: 750px) and ( max-width: 900px ) {
+        .heroFacts > img{
+            width: 85% !important;
+            left: 7.5% !important;
+        }
+    }
+    @media screen and (min-width: 880px) and ( max-width: 900px ) {
+        .heroFacts .heroFacts-item{
+            &:first-of-type {
+                top: 2.5rem !important;
+                left: 10% !important;
+            }
+            &:last-of-type {
+                top: 7rem !important;
+                right: 22% !important;
+            }
+        }
+    }
+    @media screen and ( max-width: 600px ) {
+        &>.MuiGrid-item.heroFacts{
+            margin-bottom: 7rem !important;
+            & > img{
+                width: 85% !important;
+                position: static !important;
+                margin: 1rem auto;
+            } 
+            .heroFacts-item{
+                &:first-of-type {
+                    top: auto !important;
+                    bottom: 0% !important;
+                    left: 5% !important;
+                }
+                &:last-of-type {
+                    top: auto !important;
+                    bottom: -15% !important;
+                    right: 5% !important;
+                }
+            }
+        }
+        &>.MuiGrid-item.heroSmForm{
+            margin-top: 0rem !important;
+        }
+    }
+    @media screen and ( max-width: 400px ) {
+        .heroFacts{
+            & > img{
+                width: 100% !important;
+            } 
+           .heroFacts-item:first-of-type {
+               bottom: 6% !important;
+           }
+        }
+    }
+}

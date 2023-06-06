@@ -1,0 +1,26 @@
+.LearnUs {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.LearnUs .sectionHead {
+  padding-right: 7vw;
+}
+.LearnUs > .MuiGrid-item:first-of-type {
+  padding-right: 5rem;
+}
+@media screen and (max-width: 899.9px) {
+  .LearnUs > .MuiGrid-item:first-of-type {
+    padding: 0vw 3.5vw !important;
+    margin-bottom: 5vw;
+  }
+}
+.LearnUs > .MuiGrid-item:first-of-type .learnImg {
+  max-width: 100%;
+  display: block;
+}
+.LearnUs > .MuiGrid-item:last-of-type {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}

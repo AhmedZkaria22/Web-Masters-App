@@ -1,0 +1,65 @@
+.primary-btn{
+    background-color: var(--background-button);
+    color: var(--white);    
+    &:hover{
+        background-color: var(--background-button-hover) !important;        
+    }
+}
+
+
+.outlined-primary-btn{
+    background-color: var(--white);
+    color: var(--background-button);
+    &:hover{
+        color: var(--background-button-hover) !important;
+    }
+}
+
+@mixin atomButtonVariant($variantType){
+    @if $variantType == 'outlined'{
+        background-color: var(--white);
+        color: var(--background-button);    
+        &:hover{
+            color: var(--background-button-hover) !important;
+        }    
+    }@else{
+        background-color: var(--background-button);
+        color: var(--white);    
+        &:hover{
+            background-color: var(--background-button-hover) !important;        
+        }    
+    }
+}
+
+.atomButton{
+    font-size: 0.8rem !important;
+    padding: 0.8rem 1.5rem !important;
+    text-align: center !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer !important;
+    border: 1px solid var(--background-button) !important;    
+    &>svg{
+        color: inherit !important;
+        background-color: inherit !important;
+    }
+    &:hover{
+        border-color: var(--background-button-hover) !important;
+    }
+}
+
+@media screen and (max-width: 399.9px){
+    .atomButton{
+        font-size: calc(0.75rem + 0.5vw) !important;
+        padding: 0.6rem 1.35rem !important;
+    }
+}
+
+.atomButton.primary-btn{
+    @include atomButtonVariant('primary');
+}
+
+
+.atomButton.outlined-primary-btn{
+    @include atomButtonVariant('outlined');
+}
+

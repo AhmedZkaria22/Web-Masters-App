@@ -1,0 +1,81 @@
+@import '../../../Style/Mixins';
+
+.CourseItem{
+    height: 99%;
+    border-radius: 0.9rem !important;    
+    padding: 0.5rem 0.9rem 0.9rem;
+    margin: 0rem auto 1rem;
+    width: 80%;
+    box-shadow: 0px 60px 70px 10px #b6dde21a !important;
+    @include FlexMixin(null, null, column, null, null);
+    .CourseItem-fig{
+        position: relative;
+        &>img{
+            object-fit: fill;
+            height: auto;
+        }
+        .CourseItem-fig-badge{
+            background-color: var(--white);
+            align-items: center;
+            border-radius: 0.35rem;
+            gap: 0.5rem;
+            padding: 0.25rem;
+            @include PseudoMixin(null, null, 0.5rem, 1rem, null, null);
+            &>span{
+                &.css-1pi4uwz-MuiBadge-badge{ display: none !important; }
+                font-size: 0.75rem;
+                background-color: transparent !important;
+                color: var(--primary-color) !important;
+                line-height: inherit;
+                font-weight: bold;
+            }
+            &>svg{
+                color: var(--star);
+                font-size: 1rem;
+            }
+        }
+    }
+    .CourseItem-content{
+        height: inherit;
+        padding: 24px 0px 0px !important;
+        @include FlexMixin(space-between, null, column, null, null);
+        .MuiTypography-h5{
+            text-align: left;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.4rem !important;
+            @media screen and (max-width: 399.9px) {
+                font-size: calc(0.7rem + 3vw)!important;
+            }
+        }
+
+        .CourseItem-content-wrap{
+            .MuiCardActions-root{
+                padding: 8px 0px 0px !important;
+                .atomButton{ width: 100% !important; }
+            }
+            
+            .CourseItem-content-badgesWrap{
+                gap: 0.5rem 2rem;
+                padding: 0rem;
+                @include FlexMixin(start, center, null, wrap, null);
+                .CourseItem-content-badge{
+                    position: relative;
+                    width: fit-content;
+                    @include FlexMixin(null, center, null, null, 5px);
+                    &>span{
+                        &.css-106c1u2-MuiBadge-badge{ display: none !important; }
+                        font-size: 0.75rem;
+                        line-height: inherit;
+                        background-color: transparent !important;
+                        color: var(--background-button) !important;
+                    }
+                    &>svg{
+                        font-size: 1rem;
+                        color: var(--background-button);
+                    }
+                }
+            }
+        }
+    }
+}

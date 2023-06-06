@@ -1,0 +1,40 @@
+.sectionHeadTitle{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.sectionHead-h1{
+    font-size: 3.5rem !important;
+    font-family: 'Roboto-bold', sans-serif !important;
+}
+
+.sectionHead-h2{
+    font-family: 'Roboto-bold', sans-serif !important;
+    font-size: 2.5rem !important;
+}
+
+.sectionHead-h1 + p.textTypography{
+    color: var(--text-color1) !important;
+}
+
+.sectionHeadTitle + p.textTypography{ margin-bottom: 3rem !important; }
+
+@media screen and (max-width: 399.9px) {
+    .sectionHead-h1{ font-size: calc(2rem + 3vw)!important }
+    .sectionHead-h2{ font-size: calc(1rem + 3vw)!important }
+}
+
+@media screen and (min-width: 400px) and (max-width: 599.9px) {
+    .sectionHead-h1{ font-size: 2.75rem !important; }    
+    .sectionHead-h2{ font-size: 1.75rem !important; }
+}
+@media screen and (min-width: 600px) and (max-width: 899.9px) {
+    .sectionHead-h1{ font-size: 3rem !important; }    
+    .sectionHead-h2{ font-size: 2rem !important; }
+}
+@media screen and (min-width: 900px) and (max-width: 1199.9px) {
+    .sectionHead-h1{ font-size: 3.25rem !important; }    
+    .sectionHead-h2{ font-size: 2.25rem !important; }
+}

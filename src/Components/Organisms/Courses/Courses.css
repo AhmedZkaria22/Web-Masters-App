@@ -1,0 +1,222 @@
+.primary-btn {
+  background-color: var(--background-button);
+  color: var(--white);
+}
+.primary-btn:hover {
+  background-color: var(--background-button-hover) !important;
+}
+
+.outlined-primary-btn {
+  background-color: var(--white);
+  color: var(--background-button);
+}
+.outlined-primary-btn:hover {
+  color: var(--background-button-hover) !important;
+}
+
+.atomButton {
+  font-size: 0.8rem !important;
+  padding: 0.8rem 1.5rem !important;
+  text-align: center !important;
+  border-radius: 0.5rem !important;
+  cursor: pointer !important;
+  border: 1px solid var(--background-button) !important;
+}
+.atomButton > svg {
+  color: inherit !important;
+  background-color: inherit !important;
+}
+.atomButton:hover {
+  border-color: var(--background-button-hover) !important;
+}
+
+@media screen and (max-width: 399.9px) {
+  .atomButton {
+    font-size: calc(0.75rem + 0.5vw) !important;
+    padding: 0.6rem 1.35rem !important;
+  }
+}
+.atomButton.primary-btn {
+  background-color: var(--background-button);
+  color: var(--white);
+}
+.atomButton.primary-btn:hover {
+  background-color: var(--background-button-hover) !important;
+}
+
+.atomButton.outlined-primary-btn {
+  background-color: var(--white);
+  color: var(--background-button);
+}
+.atomButton.outlined-primary-btn:hover {
+  color: var(--background-button-hover) !important;
+}
+
+.Courses .atomButton {
+  border-width: 2px !important;
+  font-weight: bold;
+}
+.Courses .atomButton svg.MuiSvgIcon-root {
+  font-size: 16px !important;
+}
+.Courses .CoursesSlider .slick-slider {
+  position: relative;
+}
+.Courses .CoursesSlider .slick-slider::after {
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--gray);
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -1.6rem;
+  left: -3.2rem;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.Courses .CoursesSlider .slick-slider::before {
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--background-button);
+  position: absolute;
+  top: -1.9rem;
+  right: 21.5vw;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.Courses .CoursesSlider .slick-list {
+  padding: 0px !important;
+  background-color: rgba(var(--slick-background), 0.059);
+  border-radius: 2rem 2rem 1rem 1rem;
+  -webkit-box-shadow: 0px 30px 60px 10px rgba(var(--slick-background), 0.129) !important;
+          box-shadow: 0px 30px 60px 10px rgba(var(--slick-background), 0.129) !important;
+}
+.Courses .CoursesSlider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+.Courses .CoursesSlider .slick-list .slick-track .slick-slide {
+  height: inherit !important;
+  -webkit-transition: opacity 500ms ease 0s, visibility 500ms ease 0s;
+  transition: opacity 500ms ease 0s, visibility 500ms ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 550.1px) {
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:not(.slick-active) {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 550.1px) and (max-width: 768px) {
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:not(.slick-active)[data-index="7"][aria-hidden=true] {
+    opacity: 1 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(2n +1) .CourseItem-content .atomButton {
+    background-color: var(--white);
+    color: var(--background-button);
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(2n +1) .CourseItem-content .atomButton:hover {
+    color: var(--background-button-hover) !important;
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(2n) .CourseItem-content .atomButton {
+    background-color: var(--background-button);
+    color: var(--white);
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(2n) .CourseItem-content .atomButton:hover {
+    background-color: var(--background-button-hover) !important;
+  }
+}
+@media screen and (min-width: 768.1px) {
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +1) .CourseItem-content .atomButton, .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +3) .CourseItem-content .atomButton {
+    background-color: var(--white);
+    color: var(--background-button);
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +1) .CourseItem-content .atomButton:hover, .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +3) .CourseItem-content .atomButton:hover {
+    color: var(--background-button-hover) !important;
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +2) .CourseItem-content .atomButton {
+    background-color: var(--background-button);
+    color: var(--white);
+  }
+  .Courses .CoursesSlider .slick-list .slick-track .slick-slide:nth-of-type(3n +2) .CourseItem-content .atomButton:hover {
+    background-color: var(--background-button-hover) !important;
+  }
+}
+.Courses .CoursesSlider .slick-list .slick-track .slick-slide > div {
+  min-height: 100%;
+  height: 100%;
+}
+.Courses .CoursesSlider .slick-list .slick-track .slick-slide > div > div {
+  height: calc(100% - 2rem);
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.Courses .CoursesSlider .slick-list .slick-track .slick-slide > div > div:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+@media screen and (max-width: 399.9px) {
+  .Courses .CoursesSlider .slick-dots {
+    bottom: -30px !important;
+  }
+}
+.Courses .CoursesSlider .slick-dots li {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0px !important;
+}
+.Courses .CoursesSlider .slick-dots li button {
+  width: 25px !important;
+  height: 25px !important;
+}
+.Courses .CoursesSlider .slick-dots li button::before {
+  font-size: 11px !important;
+  color: var(--background-button) !important;
+  position: absolute;
+  top: 4px !important;
+  width: 25px;
+  height: 16px;
+}
+.Courses .CoursesSlider .slick-dots li.slick-active {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+@media screen and (min-width: 400px) {
+  .Courses .CoursesSlider .slick-dots li.slick-active {
+    width: 30px !important;
+    margin: 0px 5px !important;
+  }
+  .Courses .CoursesSlider .slick-dots li.slick-active button {
+    width: 30px !important;
+  }
+  .Courses .CoursesSlider .slick-dots li.slick-active button::before {
+    background-color: var(--background-button) !important;
+    border-radius: 0.6rem;
+    font-size: 0px !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: 8.5px !important;
+    width: 30px !important;
+    height: 10px !important;
+  }
+}
+.Courses .CoursesSlider .slick-prev, .Courses .CoursesSlider .slick-next {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .Courses .CoursesSlider .slick-slider::before {
+    inset: -1.9rem -4% auto auto !important;
+  }
+}

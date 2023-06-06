@@ -1,0 +1,312 @@
+.Testimonials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f4f5fe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f5fe), color-stop(80%, #fafcfe));
+  background: linear-gradient(180deg, #f4f5fe 0%, #fafcfe 80%);
+  overflow: hidden;
+}
+.Testimonials .sectionHead-h2 {
+  text-align: center !important;
+  margin-bottom: 4rem;
+  padding: 0vw 6vw;
+}
+.Testimonials .sectionHead-h2 .commaDown, .Testimonials .sectionHead-h2 .commaUp {
+  display: inline-block;
+  position: relative;
+}
+.Testimonials .sectionHead-h2 .commaDown {
+  width: 0.5rem;
+  top: 7px;
+  left: -5px;
+}
+.Testimonials .sectionHead-h2 .commaUp {
+  width: 0.45rem;
+  top: -17px;
+  left: 1px;
+}
+.Testimonials .sectionHead-h2 > p {
+  display: inline-block;
+  margin: 0rem !important;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.Testimonials .TestimonialsSlider {
+  z-index: 3;
+  position: relative;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 24px;
+  border-radius: 1rem;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list {
+  border-radius: 1rem;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track {
+  background-color: var(--testimonial-background);
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide {
+  height: inherit !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div {
+  min-height: 100%;
+  height: 100%;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div {
+  height: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem {
+  border-radius: 1rem;
+  background-color: var(--white);
+  position: relative;
+  padding: 3.5rem 10% 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem > * {
+  margin: 0px !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem p {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--testimonial-text);
+  z-index: 2;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--testimonial-author);
+  z-index: 2;
+}
+@media screen and (max-width: 399.9px) {
+  .Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem p {
+    font-size: calc(0.6rem + 3vw) !important;
+  }
+  .Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem h5 {
+    font-size: calc(0.55rem + 3vw) !important;
+  }
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-list .slick-track .slick-slide > div > div > .TestimonialItem::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 6.5rem);
+  width: 13rem;
+  height: 100%;
+  background-image: url("../../../Assets/Images/quotes.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-prev, .Testimonials .TestimonialsSlider .slick-slider .slick-next {
+  display: block;
+  top: calc(100% + 6.05rem) !important;
+  height: 0.65rem !important;
+  width: 1.25rem !important;
+  background-color: transparent !important;
+  background-image: url(../../../Assets/Icons/arrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-prev::before, .Testimonials .TestimonialsSlider .slick-slider .slick-next::before {
+  display: none !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-prev.slick-arrow-active, .Testimonials .TestimonialsSlider .slick-slider .slick-next.slick-arrow-active {
+  opacity: 1 !important;
+  height: 1rem !important;
+  width: 2rem !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-next {
+  right: calc(50% - 35px) !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-next.slick-arrow-active {
+  top: calc(100% + 6.05rem) !important;
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-prev {
+  left: calc(50% - 35px) !important;
+  -webkit-transform: rotateY(180deg) translateY(-5px);
+          transform: rotateY(180deg) translateY(-5px);
+}
+.Testimonials .TestimonialsSlider .slick-slider .slick-prev.slick-arrow-active {
+  top: calc(100% + 5.85rem) !important;
+}
+.Testimonials > div {
+  position: relative;
+}
+.Testimonials > div::before, .Testimonials > div::after {
+  content: "";
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--testimonial-shadow) 0px 10px 15px;
+          box-shadow: var(--testimonial-shadow) 0px 10px 15px;
+}
+.Testimonials > div::before {
+  background-color: rgba(var(--white), 0.941);
+  z-index: 3;
+  position: absolute;
+  bottom: -1.25rem;
+  left: 2rem;
+  width: calc(100% - 4rem);
+  height: 5rem;
+}
+.Testimonials > div::after {
+  background-color: rgba(var(--white), 0.314);
+  z-index: 2;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 4rem;
+  width: calc(100% - 8rem);
+  height: 5rem;
+}
+.Testimonials > div > img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.Testimonials > div > img.person1 {
+  position: absolute;
+  top: 3.1rem;
+  left: -6.7rem;
+  width: 6rem;
+}
+.Testimonials > div > img.person2 {
+  position: absolute;
+  top: 60%;
+  left: -11.3rem;
+  width: 3.5rem;
+}
+.Testimonials > div > img.person3 {
+  position: absolute;
+  bottom: -5.8rem;
+  left: -8.2rem;
+  width: 4rem;
+  z-index: 3;
+}
+.Testimonials > div > img.person4 {
+  position: absolute;
+  top: 5.2rem;
+  right: -7.8rem;
+  width: 4rem;
+}
+.Testimonials > div > img.person5 {
+  position: absolute;
+  top: 54%;
+  right: -16.7rem;
+  width: 6.5rem;
+  z-index: 2;
+}
+.Testimonials > div > img.person6 {
+  position: absolute;
+  right: -9.8rem;
+  bottom: -5.8rem;
+  width: 3.5rem;
+}
+.Testimonials > div > img.rectangle1 {
+  position: absolute;
+  top: 46%;
+  right: -5.1rem;
+  width: 4.5rem;
+}
+.Testimonials > div > img.rectangle2 {
+  position: absolute;
+  bottom: -18%;
+  left: -5.5rem;
+  height: 9rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 399.9px) {
+  .Testimonials .sectionHead-h2 {
+    margin-bottom: 2rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Testimonials > div > img.person3 {
+    bottom: -2.5rem !important;
+  }
+  .Testimonials > div > img.person5 {
+    top: 42% !important;
+  }
+  .Testimonials > div > img.rectangle1 {
+    top: 43% !important;
+    right: -15% !important;
+  }
+  .Testimonials > div > img.rectangle2 {
+    bottom: -8% !important;
+    left: -18% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Testimonials > div > img.person1 {
+    width: calc(2rem + 5.59vw) !important;
+    left: -22% !important;
+  }
+  .Testimonials > div > img.person2 {
+    width: calc(2rem + 3.45vw) !important;
+    left: -22% !important;
+  }
+  .Testimonials > div > img.person3 {
+    width: calc(2rem + 3.95vw) !important;
+    left: -18% !important;
+  }
+  .Testimonials > div > img.person4 {
+    width: calc(2rem + 3.95vw) !important;
+    right: -20.5% !important;
+  }
+  .Testimonials > div > img.person5 {
+    width: calc(2rem + 6.45vw) !important;
+    right: -22% !important;
+  }
+  .Testimonials > div > img.person6 {
+    width: calc(2rem + 3.45vw) !important;
+    right: -10% !important;
+  }
+  .Testimonials > div > img.rectangle1 {
+    width: calc(2rem + 4.45vw) !important;
+  }
+  .Testimonials > div > img.rectangle2 {
+    height: calc(2rem + 8.95vw) !important;
+  }
+}
+@media screen and (min-width: 600.1px) and (max-width: 992px) {
+  .Testimonials > div > img.rectangle2 {
+    bottom: -14% !important;
+  }
+  .Testimonials > div > img.person3 {
+    bottom: -4.8rem !important;
+  }
+}
+@media screen and (min-width: 900.1px) and (max-width: 1200px) {
+  .Testimonials > div > img.person5 {
+    right: -15rem !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .Testimonials .TestimonialsSlider .slick-slider .slick-prev,
+.Testimonials .TestimonialsSlider .slick-slider .slick-next {
+    top: calc(100% + 7.05rem) !important;
+  }
+  .Testimonials .TestimonialsSlider .slick-slider .slick-next.slick-arrow-active {
+    top: calc(100% + 7.05rem) !important;
+  }
+  .Testimonials .TestimonialsSlider .slick-slider .slick-prev.slick-arrow-active {
+    top: calc(100% + 6.85rem) !important;
+  }
+}

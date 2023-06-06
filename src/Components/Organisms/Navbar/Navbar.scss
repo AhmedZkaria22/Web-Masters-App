@@ -1,0 +1,63 @@
+@import '../../../Style/Mixins';
+
+nav{
+    background-color: var(--background1) !important;
+    box-shadow: none !important;
+    .buttonsWrap{
+        @include FlexMixin(null, center, null, null, 1rem);
+        .atomButton{
+            width: fit-content;
+            height: fit-content;
+            text-decoration: none;
+            padding: 0.5rem;            
+            background-color: transparent;
+            color: var(--nav-button-color);
+            border: none !important;
+            font-weight: bold;
+
+            &:last-of-type{
+                background-color: var(--nav-button-background);
+                color: var(--background-button);
+            }
+        }
+    }
+    button.MuiButtonBase-root.MuiIconButton-root{
+        &:hover{
+            background-color: var(--nav-button-background) !important;
+        }
+        svg{
+            color: var(--background-button);
+        }
+    }
+}
+
+.navbar-mobile{
+    .MuiGrid-item{
+        img{
+            width: 85%;
+            margin: auto;
+            max-width: 100%;
+        }
+    }
+    ul.MuiList-root{
+        li{
+            justify-content: center;
+            a.atomButton{
+                width: fit-content;
+                height: fit-content;
+                text-decoration: none;
+                padding: 0rem 0.5rem;
+                margin-bottom: 1rem;
+                background-color: transparent;
+                color: var(--nav-button-color);
+                border: none !important;
+                font-weight: bold;
+    
+            }
+            &:last-of-type a.atomButton{
+                background-color: var(--nav-button-background);
+                color: var(--background-button);
+            }
+        }
+    }
+}

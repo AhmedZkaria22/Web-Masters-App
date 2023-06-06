@@ -1,0 +1,88 @@
+.Categories .sectionHead * {
+  text-align: center;
+}
+.Categories .sectionHead *.textTypography {
+  padding: 0vw 14vw;
+}
+@media screen and (max-width: 599.9px) {
+  .Categories .sectionHead *.textTypography {
+    padding: 0vw 0% !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899.9px) {
+  .Categories .sectionHead *.textTypography {
+    padding: 0vw 7% !important;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1199.9px) {
+  .Categories .sectionHead *.textTypography {
+    padding: 0vw 8% !important;
+  }
+}
+.Categories .categoriesFacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.Categories .categoriesFacts .categoriesFact {
+  -webkit-box-shadow: 0px 20px 70px rgba(182, 221, 226, 0.1294117647);
+          box-shadow: 0px 20px 70px rgba(182, 221, 226, 0.1294117647);
+  position: relative;
+}
+.Categories .categoriesFacts .categoriesFact::after {
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+}
+.Categories .categoriesFacts .categoriesFact:nth-of-type(1)::after {
+  position: absolute;
+  top: -3rem;
+  right: auto;
+  bottom: auto;
+  left: -4rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--gray);
+}
+.Categories .categoriesFacts .categoriesFact:nth-of-type(4)::after {
+  position: absolute;
+  top: -0.7rem;
+  right: -0.7rem;
+  bottom: auto;
+  left: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--background-button);
+}
+.Categories .categoriesFacts .categoriesFact:nth-of-type(5)::after {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -2rem;
+  left: -2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--background-button);
+}
+.Categories .categoriesFacts .categoriesFact:nth-of-type(6)::after {
+  position: absolute;
+  top: auto;
+  right: -1rem;
+  bottom: 3rem;
+  left: auto;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--gray);
+}
+@media screen and (max-width: 399.9px) {
+  .Categories .categoriesFacts .categoriesFact {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 599.9px) {
+  .Categories .categoriesFacts {
+    margin-top: 1rem !important;
+  }
+}

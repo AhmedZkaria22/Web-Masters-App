@@ -1,0 +1,22 @@
+.LearnUs{
+    align-items: center;
+    .sectionHead{
+        padding-right: 7vw;
+    }
+    &>.MuiGrid-item{
+        &:first-of-type{
+            padding-right: 5rem;
+            @media screen and (max-width: 899.9px) { 
+                padding: 0vw 3.5vw !important; 
+                margin-bottom: 5vw;
+            }
+            .learnImg{
+                max-width: 100%;
+                display: block;
+            }
+        }
+        &:last-of-type{
+            height: fit-content;
+        }
+    }
+}

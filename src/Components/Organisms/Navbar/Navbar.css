@@ -1,0 +1,68 @@
+nav {
+  background-color: var(--background1) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+nav .buttonsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+nav .buttonsWrap .atomButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--nav-button-color);
+  border: none !important;
+  font-weight: bold;
+}
+nav .buttonsWrap .atomButton:last-of-type {
+  background-color: var(--nav-button-background);
+  color: var(--background-button);
+}
+nav button.MuiButtonBase-root.MuiIconButton-root:hover {
+  background-color: var(--nav-button-background) !important;
+}
+nav button.MuiButtonBase-root.MuiIconButton-root svg {
+  color: var(--background-button);
+}
+
+.navbar-mobile .MuiGrid-item img {
+  width: 85%;
+  margin: auto;
+  max-width: 100%;
+}
+.navbar-mobile ul.MuiList-root li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar-mobile ul.MuiList-root li a.atomButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  padding: 0rem 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: var(--nav-button-color);
+  border: none !important;
+  font-weight: bold;
+}
+.navbar-mobile ul.MuiList-root li:last-of-type a.atomButton {
+  background-color: var(--nav-button-background);
+  color: var(--background-button);
+}

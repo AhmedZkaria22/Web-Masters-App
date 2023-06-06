@@ -1,0 +1,269 @@
+.Footer {
+  display: -ms-grid !important;
+  display: grid !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2.5rem 1rem;
+  -ms-grid-columns: 25% 1rem 16.666667% 1rem 16.666667% 1rem 25%;
+  grid-template-columns: 25% 16.666667% 16.666667% 25%;
+  -ms-grid-rows: auto 2.5rem auto;
+  grid-template-rows: repeat(2, auto);
+      grid-template-areas: "ftg1 ftg2 ftg3 ftg4" "ftg5 ftg5 ftg5 ftg5";
+}
+@media screen and (max-width: 600px) {
+  .Footer {
+        grid-template-areas: "ftg1" "ftg2" "ftg3" "ftg4" "ftg5";
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[5];
+    grid-template-rows: repeat(5, auto);
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .Footer {
+        grid-template-areas: "ftg1 ftg2" "ftg4 ftg3" "ftg5 ftg5";
+    -ms-grid-columns: 45% 35%;
+    grid-template-columns: 45% 35%;
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+  }
+}
+.Footer > .MuiGrid-item {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.Footer > .MuiGrid-item:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ftg1;
+}
+.Footer > .MuiGrid-item:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: ftg2;
+}
+.Footer > .MuiGrid-item:nth-of-type(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: ftg3;
+}
+.Footer > .MuiGrid-item:nth-of-type(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: ftg4;
+}
+.Footer > .MuiGrid-item:nth-of-type(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: ftg5;
+}
+@media screen and (max-width: 600px) {
+  .Footer > .MuiGrid-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .Footer > .MuiGrid-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Footer > .MuiGrid-item:nth-of-type(5) {
+    gap: 1rem;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(5) .footer-privacy-links {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(5) p.textTypography {
+    text-align: center !important;
+  }
+}
+.Footer .footer-logo {
+  display: block;
+  max-width: 100%;
+}
+.Footer h6 {
+  color: var(--footer-head);
+  text-align: left;
+  font-weight: 700;
+}
+.Footer p.textTypography {
+  color: var(--footer-text);
+}
+.Footer > .MuiGrid-item:nth-of-type(1) p.textTypography {
+  margin: 3rem 0rem 2rem;
+}
+.Footer > .MuiGrid-item:nth-of-type(5) p.textTypography {
+  text-align: right;
+  margin: 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.Footer > .MuiGrid-item:nth-of-type(5) p.textTypography span {
+  position: relative;
+  top: 1px;
+  font-weight: 700;
+}
+.Footer .footer-contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.Footer .footer-contact-links a {
+  width: 3.5rem;
+  height: 3.5rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--background-button);
+  border-radius: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Footer .footer-contact-links a > img {
+  display: block;
+}
+.Footer .footer-help-links, .Footer .footer-important-links, .Footer .footer-privacy-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.Footer .footer-help-links a, .Footer .footer-important-links a, .Footer .footer-privacy-links a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.Footer .footer-privacy-links {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.Footer .footerForm {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  margin-left: 0rem !important;
+  padding-left: 0rem !important;
+}
+.Footer .footerForm .footerInput input {
+  padding: 1rem;
+}
+.Footer .footerForm .footerInput::before, .Footer .footerForm .footerInput::after {
+  top: 0;
+  border-radius: 0.5rem;
+}
+.Footer .footerForm .footerInput::before {
+  border: 1px solid var(--input-border);
+  -webkit-transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.Footer .footerForm .footerInput::after {
+  border: 2px solid var(--active-input-border);
+  -webkit-transform: scaleY(0) !important;
+          transform: scaleY(0) !important;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+.Footer .footerForm .footerInput:hover::before {
+  border: 1px solid var(--input-border);
+}
+.Footer .footerForm .footerInput:focus::after {
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+}
+.Footer .footerForm .Mui-focused::after {
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+}
+.Footer .footerForm .atomButton.primary-btn {
+  width: 100%;
+}
+@media screen and (max-width: 399.9px) {
+  .Footer h6 {
+    font-size: calc(0.7rem + 3vw) !important;
+  }
+  .Footer .footer-help-links a,
+.Footer .footer-important-links a,
+.Footer .footer-privacy-links a {
+    font-size: calc(0.65rem + 3vw) !important;
+  }
+  .Footer .footerForm .footerInput {
+    width: 100% !important;
+  }
+  .Footer .footerForm .footerInput input {
+    font-size: calc(0.6rem + 3vw) !important;
+    padding: 0.6rem 1.35rem;
+  }
+  .Footer > .MuiGrid-item:nth-of-type(5) p.textTypography {
+    font-size: calc(0.65rem + 3vw) !important;
+  }
+}

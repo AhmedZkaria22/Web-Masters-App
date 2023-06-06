@@ -1,0 +1,21 @@
+@import '../../../Style/Mixins';
+
+form.headerForm{
+    background-color: var(--white) !important;
+    width: fit-content;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    padding-left: 1.4rem;
+    @include FlexMixin(space-between, center, null, null, 1rem);
+    svg{ font-size: 1.3em; }
+}
+
+form.footerForm{
+    background-color: var(--white) !important;
+    width: fit-content;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    padding-left: 1.4rem;
+    @include FlexMixin(center, center, null, null, 1rem);
+    svg{ font-size: 1.3em; }
+}

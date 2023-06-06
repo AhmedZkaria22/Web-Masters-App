@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.LearnUsItem .LearnUsItemTitle {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: left;
+  padding-left: 1.5rem;
+  position: relative;
+}
+@media screen and (max-width: 399.9px) {
+  .LearnUsItem .LearnUsItemTitle {
+    font-size: calc(0.65rem + 3vw) !important;
+  }
+  .LearnUsItem .LearnUsItemTitle::before {
+    font-size: 1.5em !important;
+  }
+}
+.LearnUsItem .LearnUsItemTitle::before {
+  content: "•";
+  color: var(--background-button);
+  font-size: 2.5rem;
+  line-height: 0.6rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 0px;
+}
+.LearnUsItem:not(:last-of-type) p.textTypography {
+  margin: 0rem 0rem 1.75rem !important;
+}
+.LearnUsItem:last-of-type p.textTypography {
+  margin: 0rem !important;
+}

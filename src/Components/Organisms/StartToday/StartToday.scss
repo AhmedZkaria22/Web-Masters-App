@@ -1,0 +1,39 @@
+@import '../../../Style/Mixins';
+
+.StartToday{
+    @include BackgroundMixin(url('../../../Assets/Images/start.png'), center, cover, no-repeat);
+    @media screen and (max-width: 600px) { padding: 4rem calc(2rem + 3.5vw) !important; }
+    @media screen and (max-width: 899.9px) { gap: 2rem !important; }
+    &>div{                                
+        @include FlexMixin(center, null, column, null, 0.5rem);
+        &:first-of-type{
+            align-items: flex-start;            
+            h2{
+                font-size: 2rem !important;
+                color: var(--white) !important;
+                text-align: left;
+                @media screen and (max-width: 399.9px){
+                    font-size: calc(1.2rem + 3vw)!important;
+                }
+            }
+        }
+        &:last-of-type{
+            align-items: flex-end;
+            @media screen and (max-width: 600px) {
+                padding: 0px !important;
+            }
+            a{
+                display: block;
+                width: fit-content;
+                padding: 0.8rem 2rem !important;
+                background-color: transparent !important;
+                color: var(--white) !important;
+                border: 2px solid var(--white) !important;
+                font-size: 1rem !important;
+                font-weight: 500;
+                text-decoration: none;                                                                
+            }            
+        }
+    }
+
+}

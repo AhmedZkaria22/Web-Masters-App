@@ -1,0 +1,54 @@
+@import '../../../Style/Mixins';
+
+.Categories{
+    
+    .sectionHead *{        
+        text-align: center;
+        &.textTypography{ padding: 0vw 14vw; }
+        @media screen and (max-width: 599.9px) {
+            &.textTypography{ padding: 0vw 0% !important; }
+        }
+        @media screen and (min-width: 600px) and (max-width: 899.9px) {
+            &.textTypography{ padding: 0vw 7% !important; }
+        }
+        @media screen and (min-width: 900px) and (max-width: 1199.9px) {
+            &.textTypography{ padding: 0vw 8% !important; }
+        }
+    }
+    .categoriesFacts{
+        justify-content: center;
+        gap: 2rem;
+            .categoriesFact{
+                box-shadow: 0px 20px 70px #b6dde221;
+                position: relative;
+                &::after {
+                    content: "";
+                    border-radius: 50%;            
+                    z-index: -1;
+                }
+                &:nth-of-type(1)::after{ 
+                    @include PseudoMixin(-3rem, auto, auto, -4rem, 10rem, 10rem);
+                    background-color: var(--gray); 
+                }
+                &:nth-of-type(4)::after{ 
+                    @include PseudoMixin(-0.7rem, -0.7rem, auto, auto, 2.5rem, 2.5rem);
+                    background-color: var(--background-button); 
+                }
+                &:nth-of-type(5)::after{ 
+                    @include PseudoMixin(auto, auto, -2rem, -2rem, 4.5rem, 4.5rem);
+                    background-color: var(--background-button); 
+                }
+                &:nth-of-type(6)::after{ 
+                    @include PseudoMixin(auto, -1rem, 3rem, auto, 2rem, 2rem);
+                    background-color: var(--gray); 
+                }
+                @media screen and (max-width: 399.9px) {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                }
+            }
+        @media screen and (max-width: 599.9px) {
+            margin-top: 1rem !important;
+        }
+    }
+}

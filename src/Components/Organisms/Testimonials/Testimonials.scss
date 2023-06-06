@@ -1,0 +1,208 @@
+@import '../../../Style/Mixins';
+
+.Testimonials{
+    justify-content: center;
+    background: #f4f5fe;
+    background: linear-gradient(180deg, #f4f5fe 0%, #fafcfe 80%);
+    overflow: hidden;
+
+    .sectionHead-h2{ 
+        text-align: center !important;
+        margin-bottom: 4rem;
+        padding: 0vw 6vw;
+
+        .commaDown, .commaUp{
+            display: inline-block;
+            position: relative;
+        }
+        .commaDown{ width: 0.5rem;    top: 7px;      left: -5px; }
+        .commaUp{ width: 0.45rem;     top: -17px;    left: 1px;  }
+
+        &>p{
+            display: inline-block;
+            margin: 0rem !important;
+            font-size: inherit;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+    }
+
+    .TestimonialsSlider{
+        z-index: 3;
+        position: relative;
+        box-shadow: #959da533 0px 10px 24px;
+        border-radius: 1rem;
+
+        .slick-slider{
+            .slick-list{
+                border-radius: 1rem;
+                .slick-track{  
+                    background-color: var(--testimonial-background);
+                    .slick-slide{
+                        height: inherit !important;                    
+                        &>div{
+                            min-height: 100%;
+                            height: 100%;
+                            &>div{
+                                height: 100%;
+                                cursor: grab;
+                                &:active{ cursor: grabbing; }
+                                &>.TestimonialItem{                                    
+                                    border-radius: 1rem;                                                                                                            
+                                    background-color: var(--white);                                    
+                                    position: relative;
+                                    padding: 3.5rem 10% 1.5rem;
+                                    @include FlexMixin(null, null, column, null, 0.75rem);                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            
+                                    &>*{
+                                        margin: 0px !important;
+                                    }
+                                    p{
+                                        font-size: 1.35rem;
+                                        line-height: 1.5;
+                                        color: var(--testimonial-text);
+                                        z-index: 2;
+                                    }
+                                    h5{
+                                        font-size: 1.3rem;
+                                        font-weight: 600;
+                                        text-transform: capitalize;
+                                        color: var(--testimonial-author);
+                                        z-index: 2;
+                                    }
+                                    @media screen and (max-width: 399.9px) {
+                                        p{ font-size: calc(0.6rem + 3vw)!important; }
+                                        h5{ font-size: calc(0.55rem + 3vw)!important; }
+                                    }
+                                    &::before{
+                                        content: "";
+                                        z-index: 1;
+                                        @include PseudoMixin(0px, null, null, calc(50% - 6.5rem), 13rem, 100%);
+                                        @include BackgroundMixin(url('../../../Assets/Images/quotes.png'), center center, contain, no-repeat);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }    
+            }
+
+            .slick-prev, .slick-next{
+                display: block;
+                top: calc(100% + 6.05rem) !important;
+                height: 0.65rem !important;
+                width: 1.25rem !important;
+                background-color: transparent !important;
+                @include BackgroundMixin(url(../../../Assets/Icons/arrow.png), null, 100% 100%, no-repeat);
+                
+                opacity: 0.6;
+                cursor: pointer;
+                transition: all 0.3s linear 0s;
+                &::before{
+                    display: none !important;
+                }
+
+                &.slick-arrow-active{ 
+                    opacity: 1 !important; 
+                    height: 1.0rem !important;
+                    width: 2.0rem !important;                    
+                }
+            }
+            .slick-next{
+                right: calc(50% - 35px) !important;
+                &.slick-arrow-active{ top: calc(100% + 6.05rem) !important; }
+            }
+            .slick-prev{
+                left: calc(50% - 35px) !important;
+                transform: rotateY(180deg) translateY(-5px);
+                &.slick-arrow-active{ top: calc(100% + 5.85rem) !important; }
+            }
+        }
+    }
+
+    &>div{
+        position: relative;
+        &::before, &::after{
+            content: "";            
+            border-radius: 1rem;            
+            box-shadow: var(--testimonial-shadow) 0px 10px 15px;
+        }
+        &::before{                                                
+            background-color: rgba(var(--white), 0.941);            
+            z-index: 3;
+            @include PseudoMixin(null, null, -1.25rem, 2rem, calc(100% - 4rem), 5rem);
+        }
+        &::after{                                                
+            background-color: rgba(var(--white), 0.314);            
+            z-index: 2;
+            @include PseudoMixin(null, null, -2.5rem, 4rem, calc(100% - 8rem), 5rem);
+        }
+        &>img{
+            object-fit: fill;
+            &.person1{ @include PseudoMixin(3.1rem, null, null, -6.7rem, 6rem, null); }
+            &.person2{ @include PseudoMixin(60%, null, null, -11.3rem, 3.5rem, null); }
+            &.person3{ @include PseudoMixin(null, null, -5.8rem, -8.2rem, 4rem, null); z-index: 3; }
+            &.person4{ @include PseudoMixin(5.2rem, -7.8rem, null, null, 4rem, null); }
+            &.person5{ @include PseudoMixin(54%, -16.7rem, null, null, 6.5rem, null); z-index: 2; }
+            &.person6{ @include PseudoMixin(null, -9.8rem, -5.8rem, null, 3.5rem, null); }
+            &.rectangle1{ @include PseudoMixin(46%, -5.1rem, null, null, 4.5rem, null); }
+            &.rectangle2{ @include PseudoMixin(null, null, -18%, -5.5rem, null, 9rem); z-index: 1; }
+        }
+    }
+
+}
+
+@media screen and (max-width: 399.9px) {
+    .Testimonials .sectionHead-h2{ margin-bottom: 2rem !important; }
+}
+
+@media screen and (max-width: 600px) {
+    .Testimonials > div >img{
+        &.person3{ bottom: -2.5rem !important; }
+        &.person5{ top: 42% !important; }
+        &.rectangle1{ top: 43% !important;     right: -15% !important; }
+        &.rectangle2{ bottom: -8% !important;       left: -18% !important; }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Testimonials > div >img{
+        &.person1{ width: calc(2rem + 5.59vw) !important;       left: -22% !important; }
+        &.person2{ width: calc(2rem + 3.45vw) !important;       left: -22% !important; }
+        &.person3{ width: calc(2rem + 3.95vw) !important;       left: -18% !important; }
+        &.person4{ width: calc(2rem + 3.95vw) !important;       right: -20.5% !important; }
+        &.person5{ width: calc(2rem + 6.45vw) !important;       right: -22% !important;}
+        &.person6{ width: calc(2rem + 3.45vw) !important;       right: -10% !important; }
+        &.rectangle1{ width: calc(2rem + 4.45vw) !important; }
+        &.rectangle2{ height: calc(2rem + 8.95vw) !important; }
+    }
+}
+
+
+
+@media screen and (min-width: 600.1px) and (max-width: 992px) {
+    .Testimonials > div > img.rectangle2 {
+        bottom: -14% !important;
+    }
+    .Testimonials > div > img.person3 {
+        bottom: -4.8rem !important;
+    }
+}
+@media screen and (min-width: 900.1px) and (max-width: 1200px) {
+    .Testimonials > div > img.person5 {
+        right: -15rem !important;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .Testimonials .TestimonialsSlider .slick-slider .slick-prev, 
+    .Testimonials .TestimonialsSlider .slick-slider .slick-next {
+        top: calc(100% + 7.05rem) !important;
+    }
+
+    .Testimonials .TestimonialsSlider .slick-slider .slick-next.slick-arrow-active {
+        top: calc(100% + 7.05rem) !important;
+    }
+    .Testimonials .TestimonialsSlider .slick-slider .slick-prev.slick-arrow-active {
+        top: calc(100% + 6.85rem) !important;
+    }
+}

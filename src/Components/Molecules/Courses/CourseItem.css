@@ -1,0 +1,122 @@
+.CourseItem {
+  height: 99%;
+  border-radius: 0.9rem !important;
+  padding: 0.5rem 0.9rem 0.9rem;
+  margin: 0rem auto 1rem;
+  width: 80%;
+  -webkit-box-shadow: 0px 60px 70px 10px rgba(182, 221, 226, 0.1019607843) !important;
+          box-shadow: 0px 60px 70px 10px rgba(182, 221, 226, 0.1019607843) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CourseItem .CourseItem-fig {
+  position: relative;
+}
+.CourseItem .CourseItem-fig > img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: auto;
+}
+.CourseItem .CourseItem-fig .CourseItem-fig-badge {
+  background-color: var(--white);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.35rem;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+}
+.CourseItem .CourseItem-fig .CourseItem-fig-badge > span {
+  font-size: 0.75rem;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  line-height: inherit;
+  font-weight: bold;
+}
+.CourseItem .CourseItem-fig .CourseItem-fig-badge > span.css-1pi4uwz-MuiBadge-badge {
+  display: none !important;
+}
+.CourseItem .CourseItem-fig .CourseItem-fig-badge > svg {
+  color: var(--star);
+  font-size: 1rem;
+}
+.CourseItem .CourseItem-content {
+  height: inherit;
+  padding: 24px 0px 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CourseItem .CourseItem-content .MuiTypography-h5 {
+  text-align: left;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.4rem !important;
+}
+@media screen and (max-width: 399.9px) {
+  .CourseItem .CourseItem-content .MuiTypography-h5 {
+    font-size: calc(0.7rem + 3vw) !important;
+  }
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .MuiCardActions-root {
+  padding: 8px 0px 0px !important;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .MuiCardActions-root .atomButton {
+  width: 100% !important;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .CourseItem-content-badgesWrap {
+  gap: 0.5rem 2rem;
+  padding: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .CourseItem-content-badgesWrap .CourseItem-content-badge {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .CourseItem-content-badgesWrap .CourseItem-content-badge > span {
+  font-size: 0.75rem;
+  line-height: inherit;
+  background-color: transparent !important;
+  color: var(--background-button) !important;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .CourseItem-content-badgesWrap .CourseItem-content-badge > span.css-106c1u2-MuiBadge-badge {
+  display: none !important;
+}
+.CourseItem .CourseItem-content .CourseItem-content-wrap .CourseItem-content-badgesWrap .CourseItem-content-badge > svg {
+  font-size: 1rem;
+  color: var(--background-button);
+}

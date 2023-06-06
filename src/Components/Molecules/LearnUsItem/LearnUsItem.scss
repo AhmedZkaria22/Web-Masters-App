@@ -1,0 +1,27 @@
+@import '../../../Style/Mixins';
+
+.LearnUsItem{
+    .LearnUsItemTitle{
+        color: var(--primary-color);
+        font-weight: bold;
+        text-align: left;
+        padding-left: 1.5rem;
+        position: relative;
+        @media screen and (max-width: 399.9px) {
+            font-size: calc(0.65rem + 3vw)!important;
+            &::before{ font-size: 1.5em !important; }
+        }
+        
+        &::before{
+            content: '•';
+            color: var(--background-button);
+            font-size: 2.5rem;
+            line-height: 0.6rem;
+            @include PseudoMixin(0.6rem, null, null, 0px, null, null);
+        }
+    
+    }
+    &:not(:last-of-type) p.textTypography{ margin: 0rem 0rem 1.75rem !important; }
+    &:last-of-type p.textTypography{ margin: 0rem !important; }
+}
+

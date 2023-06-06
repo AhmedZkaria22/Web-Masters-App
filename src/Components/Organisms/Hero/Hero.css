@@ -1,0 +1,178 @@
+.MuiGrid-root.MuiGrid-container.Hero {
+  background-color: var(--background1) !important;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent .sectionHead {
+  padding-right: 7rem;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent p.textTypography {
+  font-size: 1.2rem !important;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent form.headerForm {
+  width: 85%;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent form.headerForm > .MuiBox-root {
+  width: 80%;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent form.headerForm > .MuiBox-root > .headerInput {
+  width: calc(100% - 21px);
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroContent form.headerForm > .MuiBox-root > .headerInput::before, .MuiGrid-root.MuiGrid-container.Hero .heroContent form.headerForm > .MuiBox-root > .headerInput::after {
+  display: none !important;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts {
+  position: relative;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item {
+  z-index: 2;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:first-of-type {
+  position: absolute;
+  top: 2rem;
+  left: 4%;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:last-of-type {
+  position: absolute;
+  top: 6rem;
+  right: 23%;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item > .categoriesFact {
+  padding: 1.6rem 1rem 0.6rem !important;
+  position: relative;
+  max-width: 100% !important;
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item > .categoriesFact img {
+  position: absolute;
+  top: -2rem;
+  right: calc(50% - 1.75rem);
+}
+.MuiGrid-root.MuiGrid-container.Hero .heroFacts > img {
+  margin: auto auto 0rem;
+  max-height: 50vh;
+  display: block;
+  position: absolute;
+  top: -1%;
+  left: 5%;
+  width: 90%;
+}
+@media screen and (max-width: 399.9px) {
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm form.headerForm {
+    width: 85% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm form.headerForm input.MuiInputBase-input.MuiInput-input {
+    font-size: calc(0.75rem + 0.5vw) !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .MuiGrid-root.MuiGrid-container.Hero .heroContent .sectionHead {
+    padding-right: 0rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .MuiGrid-root.MuiGrid-container.Hero {
+    padding-top: 4rem !important;
+  }
+}
+@media screen and (min-width: 900.01px) {
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroContent form.headerForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroFacts {
+    height: 50vh;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroContent form.headerForm {
+    display: none !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm form.headerForm {
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm form.headerForm > .MuiBox-root {
+    width: 80%;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm form.headerForm > .MuiBox-root > .headerInput {
+    width: calc(100% - 21px);
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 1000px) {
+  .MuiGrid-root.MuiGrid-container.Hero {
+    padding: 10rem 0% 2rem 8.4% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:first-of-type {
+    top: 2.5rem !important;
+    left: -3% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:last-of-type {
+    top: 7rem !important;
+    right: 12% !important;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts > img {
+    width: 85% !important;
+    left: 7.5% !important;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 900px) {
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:first-of-type {
+    top: 2.5rem !important;
+    left: 10% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:last-of-type {
+    top: 7rem !important;
+    right: 22% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroFacts {
+    margin-bottom: 7rem !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroFacts > img {
+    width: 85% !important;
+    position: static !important;
+    margin: 1rem auto;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroFacts .heroFacts-item:first-of-type {
+    top: auto !important;
+    bottom: 0% !important;
+    left: 5% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroFacts .heroFacts-item:last-of-type {
+    top: auto !important;
+    bottom: -15% !important;
+    right: 5% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero > .MuiGrid-item.heroSmForm {
+    margin-top: 0rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts > img {
+    width: 100% !important;
+  }
+  .MuiGrid-root.MuiGrid-container.Hero .heroFacts .heroFacts-item:first-of-type {
+    bottom: 6% !important;
+  }
+}
