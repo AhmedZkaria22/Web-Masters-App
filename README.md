@@ -7,7 +7,7 @@ By: *Ahmed Zakaria*
 ### Technologies
   * React Js
   * [Atomic Design Methodology](https://atomicdesign.bradfrost.com/chapter-2/)  
-  * Scss : Mixins, Partal files, vars, conditions
+  * Scss : Vars, conditions, mixins, partial files, 
   * React Slick
   * Material UI
   * Material UI Icons
